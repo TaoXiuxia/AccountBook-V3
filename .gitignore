@@ -1,5 +1,12 @@
-/target/
-/.settings/
-.project
+/.project
+/.settings
+/accountbook_admin/.project
+/accountbook_admin/.settings
+/accountbook_admin/.classpath
+/accountbook_common/.project
+/accountbook_common/.settings
+/accountbook_common/.classpath
+target
 .classpath
-.checkstyle
+.project
+.settings
