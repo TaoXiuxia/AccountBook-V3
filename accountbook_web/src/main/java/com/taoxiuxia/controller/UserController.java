@@ -12,6 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.patchca.color.SingleColorFactory;
+import org.patchca.filter.predefined.CurvesRippleFilterFactory;
+import org.patchca.service.ConfigurableCaptchaService;
+import org.patchca.utils.encoder.EncoderHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,10 +36,6 @@ import com.taoxiuxia.util.EmailUtil;
 import com.taoxiuxia.util.PasswordUtil;
 import com.taoxiuxia.util.StringTools;
 
-import checkcode.patchca.color.SingleColorFactory;
-import checkcode.patchca.filter.predefined.CurvesRippleFilterFactory;
-import checkcode.patchca.service.ConfigurableCaptchaService;
-import checkcode.patchca.utils.encoder.EncoderHelper;
 
 @Controller
 @RequestMapping("/userController")

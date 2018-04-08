@@ -8,7 +8,6 @@ function register() {
 	if(!validator()){
 		return;
 	}
-	
 	var userName = $("#userName").val();
 	var email = $("#email").val();
 	var password = $("#password").val();
