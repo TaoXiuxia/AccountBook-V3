@@ -197,6 +197,7 @@
             value: "${t.sumMoney}"
         })
     </c:forEach>
+    
     var option4 = {
         title:{
             text:'支出项目比例',
@@ -243,6 +244,15 @@ function searchHistoryGroupByName(){
 				    value: t.sumMoney
 				})
 			}
+			var allDataArr_new = new Array();
+            for(var i=0;i<data1.allExGroupByItemName.length;i++){
+                t=data1.allExGroupByItemName[i];
+                allDataArr_new.push({
+                    name: t.name+" : "+t.sumMoney,
+                    value: t.sumMoney
+                })
+            }
+			
 			//更新数据
 			var option2_new = myChart2.getOption();
 		    option2_new.series[0].data = inDataArr_new;   
@@ -251,6 +261,10 @@ function searchHistoryGroupByName(){
 		    var option3_new = myChart3.getOption();
 		    option3_new.series[0].data = exDataArr_new;   
 		    myChart3.setOption(option3_new);    
+		    
+		    var option4_new = myChart4.getOption();
+            option4_new.series[0].data = allDataArr_new;   
+            myChart4.setOption(option4_new);   
 			
 		},
 		error: function (msg) {

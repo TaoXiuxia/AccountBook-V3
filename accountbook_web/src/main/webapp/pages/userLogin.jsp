@@ -35,7 +35,7 @@
 		
 		<div class="div1">
 			<label class="label1">验证码：</label>
-			<input class="input2" id="checkCode" placeholder="请输入验证码" maxlength="4">
+			<input class="input2" id="checkCode" placeholder="请输入验证码" maxlength="6">
 			<a onclick="refreshCheckCodeButton()" href="#" id="refreshCheckCode"><img src="checkCode.action"></a>
 		</div>
 		

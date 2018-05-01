@@ -26,26 +26,9 @@ public class UserServiceImpl implements IUserService {
 	@Resource
 	private UserMapper userMapper;
 	
-	public UserMapper getUserMapper() {
-		return userMapper;
-	}
-
-	@Autowired
-	public void setUserMapper(UserMapper userMapper) {
-		this.userMapper = userMapper;
-	}
-	
 	@Resource
 	private ItemMapper itemMapper;
-
-	public ItemMapper getItemMapper() {
-		return itemMapper;
-	}
-
-	@Autowired
-	public void setItemMapper(ItemMapper itemMapper) {
-		this.itemMapper = itemMapper;
-	}
+	
 
 	/**
 	 * 注册用户
@@ -62,7 +45,7 @@ public class UserServiceImpl implements IUserService {
 	}
 
 	@Override
-	public User login(String account, String password, boolean hasMD5) throws Exception{
+	public User login(String account, String password, boolean hasMD5) throws BusinessException, Exception{
 		if (StringTools.isEmpty(account) || StringTools.isEmpty(password)) {
 			throw new BusinessException("输入参数不合法,account或password不能为空");
 		}
@@ -161,5 +144,24 @@ public class UserServiceImpl implements IUserService {
 		return null;
 	}
 
-	
+	//*************************************************************************************
+	//********************************* getter and setter *********************************
+	//*************************************************************************************
+	public UserMapper getUserMapper() {
+		return userMapper;
+	}
+
+	@Autowired
+	public void setUserMapper(UserMapper userMapper) {
+		this.userMapper = userMapper;
+	}
+
+	public ItemMapper getItemMapper() {
+		return itemMapper;
+	}
+
+	@Autowired
+	public void setItemMapper(ItemMapper itemMapper) {
+		this.itemMapper = itemMapper;
+	}
 }

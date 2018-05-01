@@ -113,8 +113,10 @@ public class HistoryController {
 		int userId = sessionUser.getUserId();
 		List<Map> incomeGroupByItemName = historyService.selectIncomeGroupByItemName(userId, startdate, enddate);
 		List<Map> expenditureGroupByItemName = historyService.selectExpenditureGroupByItemName(userId, startdate, enddate);
+		List<Map> allExpenditureGroupByItemName = historyService.selectAllExpenditureGroupByItemName(userId, startdate, enddate);
 		map.put("inGroupByItemName", incomeGroupByItemName);
 		map.put("exGroupByItemName", expenditureGroupByItemName);
+		map.put("allExGroupByItemName", allExpenditureGroupByItemName);
 		return map;
 	}
 	
