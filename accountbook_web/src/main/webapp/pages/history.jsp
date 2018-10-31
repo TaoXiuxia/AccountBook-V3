@@ -71,7 +71,7 @@
 			</div>
 			<br>
 			<div>
-				<table class="table table-bordered" id="details"> 
+				<table class="table table-bordered table-striped" id="details"> 
 				    <thead> 
 				        <tr> 
 							<th class="col1">日期</th>

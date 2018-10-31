@@ -29,7 +29,7 @@
 				<button class="add-button" onclick="addItem('in')">添加收入项</button>
 			</div>
 			<div>
-				<table class="table table-bordered"> 
+				<table class="table table-bordered table-striped"> 
 				    <thead> 
 				        <tr> 
 							<th class="col1">项目</th>
@@ -66,7 +66,7 @@
 				<button class="add-button" onclick="addItem('ex')">添加支出项</button>
 			</div>
 			<div>
-				<table class="table table-bordered"> 
+				<table class="table table-bordered  table-striped"> 
 				    <thead> 
 				        <tr> 
 							<th class="col1">项目</th>

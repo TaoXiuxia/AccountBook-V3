@@ -29,7 +29,7 @@
 				<button class="add-button" onclick="addPayMethod('in')">添加收入方式</button>
 			</div>
 			<div>
-				<table class="table table-bordered"> 
+				<table class="table table-bordered table-striped"> 
 				    <thead> 
 				        <tr> 
 							<th class="col1">收入方式</th>
@@ -65,7 +65,7 @@
 				<button class="add-button" onclick="addPayMethod('ex')">添加支出方式</button>
 			</div>
 			<div>
-				<table class="table table-bordered"> 
+				<table class="table table-bordered table-striped"> 
 				    <thead> 
 				        <tr> 
 							<th class="col1">支出方式</th>

@@ -191,12 +191,20 @@
 		</dependency>
 
 		<!-- maven无法自动下载patcha.jar，于是手动下载下来，本地引用 -->
+		 <!-- https://mvnrepository.com/artifact/net.pusuo/patchca -->
 		<dependency>
-			<groupId>net.pusuo</groupId>
-			<artifactId>patchca</artifactId>
-			<version>0.5.0</version>
-			<scope>system</scope>
-			<systemPath>E:/Maven/repo/m2/net/pusuo/patchca/0.5.0/patchca.jar</systemPath>
+		    <groupId>net.pusuo</groupId>
+		    <artifactId>patchca</artifactId>
+		    <version>0.5.0</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/xdoclet/xdoclet -->
+		<dependency>
+		    <groupId>xdoclet</groupId>
+		    <artifactId>xdoclet</artifactId>
+		    <version>1.2.3</version>
+		</dependency>
+		
+		 
 	</dependencies>
 </project>
