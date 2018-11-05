@@ -108,7 +108,7 @@
 		
 		<div class="col-xs-12">
 			<div>
-				<table class="table table-bordered table-striped"> 
+				<table class="table table-bordered table-striped table-hover"> 
 				    <thead> 
 				        <tr> 
 							<th class="col1">日期</th>
